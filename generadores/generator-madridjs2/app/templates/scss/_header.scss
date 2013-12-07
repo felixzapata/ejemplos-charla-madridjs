@@ -1,0 +1,29 @@
+
+
+header{
+	text-align:left;
+	border-top:30px solid $color_titulo;
+}
+
+
+
+/* Título */
+header{
+	p{
+		margin-top:3em;
+		color:#737373;
+		font-size:1.6em;
+		font-weight:normal;
+	}
+	&.interior{
+		position:absolute;
+		top:-9999em;
+		text-indent:-9999em;
+		width:0;
+	}
+	h1 {
+		margin-top:.5em;
+		@include formato-titulo;
+	}
+}
+

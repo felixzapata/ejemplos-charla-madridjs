@@ -1,0 +1,36 @@
+// Mixins
+@mixin clear($elemento) {
+	#{$elemento}:before, #{$elemento}:after { content:""; display:table; }
+	#{$elemento}:after { clear:both; }
+}
+
+@mixin formato-titulo-ppal {
+	font-size:3.2em;
+	color:$color_titulo;
+	font-weight:normal;
+}
+
+@mixin formato-titulo {
+	font-size:2.8em;
+	color:$color_titulo;
+}
+
+@mixin formato-titulo-2 {
+	font-size:2.4em;
+	color:$color_titulo;
+	font-style:italic;
+}
+
+@mixin formato-titulo-3 {
+	font-size:3em;
+	color:$color_titulo;
+}
+
+@mixin round-module {
+	@include border-radius(10px);
+}
+
+@mixin rwd_layout {
+	#content, #sideBar { float:none; width:100%;  @include box-sizing(border-box);  }
+}
+

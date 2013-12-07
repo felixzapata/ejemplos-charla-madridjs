@@ -1,0 +1,27 @@
+{
+    "author": {
+        "name": "<%= author %>"
+    },
+    "name": "<%= componentName %>",
+    "version": "1.0.0",
+    "main": [],
+    "ignore": [
+        "**/*.",
+        "bower_components",
+        "node_modules",
+        "Gruntfile.js",
+        "package.json"
+    ],
+    "dependencies": { 
+    	<%
+        if (includejQueryDependency) { %>
+                "jquery": "1.10.2" 
+        <% } %>
+		<% if (includeLodashDependency && includejQueryDependency) { %> , <% } %> 
+        <% if (includeLodashDependency) { %>
+                "lodash": "~2.4.0" <%
+        } %>
+    },
+    "devDependencies": {},
+    "private": true
+}

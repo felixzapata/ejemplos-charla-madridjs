@@ -1,0 +1,18 @@
+!!! 5
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='es')
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8(lang='es')
+//if IE 8
+  html.no-js.lt-ie9(lang='es')
+//[if gt IE 8]><!
+html.no-js(lang='es')
+  //<![endif]
+  include ../includes/head
+  body
+    include ../includes/header
+    div(id="bodyContent", class="total cl", role="main")
+        block topContent
+        block colLayout
+    include ../includes/footer
+    include ../includes/scripts

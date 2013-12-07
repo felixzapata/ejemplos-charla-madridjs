@@ -1,0 +1,20 @@
+{
+	"author": {
+		"name": "Félix Zapata"
+	},
+	"name": "nombre de mi proyecto",
+	"version": "1.0.0",
+	"main": [],
+	"ignore": [
+		"**/*.",
+		"bower_components",
+		"node_modules",
+		"Gruntfile.js",
+		"package.json"
+	],
+	"dependencies":{
+		"lodash":"~2.4.0"
+	},
+	"devDependencies": {},
+	"private": true
+}

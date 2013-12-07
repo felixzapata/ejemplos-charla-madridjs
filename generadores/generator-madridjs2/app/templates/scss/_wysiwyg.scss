@@ -1,0 +1,34 @@
+.wysiwyg  {
+	color:#666;
+	font-size:1.3em;
+	h2 { margin-top:1em; }
+	h2, h3, h4, h5, h6 {
+		margin-bottom:1.2em;
+	}
+	h2 {
+		font-size:1.4em;
+	}
+	h3 {
+		font-size:1.3em;
+	}
+	h4, h5, h6 {
+		font-size:1.2em;
+	}
+	p {
+		margin-bottom:1.2em;
+		line-height:1.3em;
+	}
+	ul {
+		padding:1em;
+		list-style:disc;
+	}
+	ol {
+		padding:1em;
+		list-style:decimal;
+	}
+	li {
+		margin-left:1em;
+		margin-bottom:1.5em;
+	}
+}
+

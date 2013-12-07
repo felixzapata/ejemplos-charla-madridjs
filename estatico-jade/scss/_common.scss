@@ -1,0 +1,60 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+body{line-height:1}
+ol, ul{list-style:none} 
+blockquote, q{quotes:none} 
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+ 
+html{overflow-y:scroll} /* force a vertical scrollbar to prevent a jumpy page */
+button{width:auto;overflow:visible} /* make buttons play nice in IE */
+del{text-decoration:line-through}
+abbr[title], dfn[title]{border-bottom:1px dotted #000;cursor:help}
+.clickable, input[type=button], input[type=submit], input[type=reset], button{cursor:pointer} /* hand cursor on clickable elements */
+pre, code, kbd, samp{font-family:monospace, sans-serif} /* standardize any monospaced elements */
+/* Added to reset form elements */
+input, textarea, select, option{margin:0;padding:0;border:1px solid #000;background:none;font:100%/100% Arial, sans-serif}
+/* Added to reset strong, em*/
+strong, b {font-weight:bold}
+em, i {font-style:italic}
+/*img {max-width:100%; /*Prevent stretching of full-size and large-size images with height and width attributes in IE8 width: auto; height:auto;}*/
+
+.clr {clear:both}
+.flt {float:left}
+.frt {float:right}
+.offscreen {position:absolute;top:-1500em;left:0;width:1px;height:1px;overflow:hidden}
+.boton { background: $color_titulo url("../images/icos.png") no-repeat -960px -467px ; @include border-radius(10px); color: #fff; cursor: pointer; margin-bottom: 2em; padding: .3em 1em .3em 2.2em; text-decoration: none; border:none; font-size:1.6em; font-weight:bold; line-height:1.4em;
+	&:hover {
+		text-decoration:none;
+		color:#fff;
+	}
+}
+.back { background:$color_titulo url("../images/bck_back.png") no-repeat .5em .5em }
+.banner img { max-width:100%; display:block; margin:0 auto; @include border-radius(10px); border:1px solid #ccc }
+
+body{
+	font-family:$trebuchet;
+	background:#fff;
+	color:#000;
+	margin:auto;
+	text-align:center;
+	font-size:62.5%;
+	
+}
+
+a:hover { text-decoration: none }
+
+
+
+.roundcorners{ @include round-module; }
+.standardegree{ @include background-image(linear-gradient(#fff, #eee)); }
+.lateraldegree{@include background-image(linear-gradient(left, #fcfcfc, #fff));}
+.caja { margin: 1em 0; border: 1px solid #ccc;  }
+
+a{ color:#e41b13; }
+a:hover{ color:#777; }
+
+
+

@@ -1,0 +1,39 @@
+
+
+.caja {
+	.title{
+		margin-bottom:.5em;
+		padding:.2em 0 .4em .5em;
+		color:#fff;
+		font-family:$trebuchet;
+		font-size:1.8em;
+		border-bottom:1px solid #ccc;
+		background:$color_titulo;
+		@include border-top-left-radius(10px);
+		@include border-top-right-radius(10px);
+	}
+}
+
+
+
+
+.entryTitle {
+	margin-bottom:2em;
+	.user {
+		float:left;
+		width:20em;
+		@include formato-titulo-2;
+	}
+	span {
+		float:right;
+		padding-top:.4em;
+		font-size:1.2em;
+	}
+}
+
+.wide{
+	.entryTitle {
+		.user { float:none; width:auto }
+	}
+}
+

@@ -1,0 +1,21 @@
+body {  @include background-image(linear-gradient(#f7f7f7, #fff));  }
+header, #principal, footer{
+	width:100%;
+}
+.total{
+	width:94%;
+	max-width:1000px !important;
+	margin:auto;
+}
+
+#bodyContent { padding:2em 0; text-align:left }
+#content {
+	float:left; width:65%; min-height:33em; padding:2.6em;
+	&.wide { float:none; width:auto }
+}
+#sideBar { float:right; width:23%; margin-top:1em; }
+
+.cl:before, .cl:after { content:""; display:table; }
+.cl:after { clear:both; }
+
+

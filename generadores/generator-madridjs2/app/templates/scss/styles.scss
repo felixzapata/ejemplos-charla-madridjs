@@ -1,0 +1,14 @@
+@import "compass/css3";
+$experimental-support-for-svg: true; // Necesario para que los degradados css3 funcionen en IE9 y Opera
+$color_titulo:#000;
+$trebuchet:"Trebuchet MS", Arial, Helvetica, sans-serif;
+@import "mixins";
+@import "common";
+@import "wysiwyg";
+@import "layout";
+@import "header";
+@import "presentation";
+@import "footer";
+@import "rwd";
+
+
